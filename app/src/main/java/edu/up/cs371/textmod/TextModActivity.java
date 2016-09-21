@@ -51,7 +51,7 @@ public class TextModActivity extends ActionBarActivity implements View.OnClickLi
         setContentView(R.layout.activity_text_mod);
 
         text = (EditText) findViewById(R.id.editText);
-
+        //extra change
         clear = (Button) findViewById(R.id.button);
         clear.setOnClickListener(this);
 
@@ -142,6 +142,12 @@ public class TextModActivity extends ActionBarActivity implements View.OnClickLi
         }
         if (view.equals(lower)) {
             text.setText(text.getText().toString().toLowerCase());
+        }
+    public void onClick(View view)
+    {
+        if (view == clear) //Eric #3
+        {
+            text.setText("");
         }
     }
 
