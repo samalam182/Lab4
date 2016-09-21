@@ -147,6 +147,18 @@ public class TextModActivity extends ActionBarActivity implements View.OnClickLi
         {
             text.setText("");
         }
+        if (view == reverse) //Alex #2
+        {
+            String test = text.getText().toString();
+            String result = new StringBuffer(test).reverse().toString();
+            text.setText(result);
+        }
+        if (view == copyName) // Sam #1
+        {
+            Spinner spinner = (Spinner)findViewById(R.id.spinner);
+            String raw = spinner.getSelectedItem().toString();
+            text.setText(raw);
+        }
     }
 
     private class MySpinnerListener implements OnItemSelectedListener {
