@@ -20,6 +20,8 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
+
 import java.util.ArrayList;
 
 public class TextModActivity extends ActionBarActivity implements View.OnClickListener{
@@ -135,7 +137,12 @@ public class TextModActivity extends ActionBarActivity implements View.OnClickLi
      */
 
     public void onClick(View view){
-
+        if (view.equals(upper)) {
+            text.setText(text.getText().toString().toUpperCase());
+        }
+        if (view.equals(lower)) {
+            text.setText(text.getText().toString().toLowerCase());
+        }
     }
 
     private class MySpinnerListener implements OnItemSelectedListener {
