@@ -12,6 +12,7 @@
         <item>@mipmap/sampic</item>
         <item>@mipmap/ic_launcher</item>
         <item>@mipmap/alexander</item>
+        <item>@mipmap/mitchell</item>
     </array>
 
     <string-array name="spinner_names">
@@ -21,6 +22,7 @@
         <item>Samuel DeWhitt</item>
         <item>Eric Hoser</item>
         <item>Alexander Nowlin</item>
+        <item>Mitchell Nguyen</item>
     </string-array>
 
 </resources>
