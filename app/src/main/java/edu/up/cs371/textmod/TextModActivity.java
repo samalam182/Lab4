@@ -153,11 +153,11 @@ public class TextModActivity extends ActionBarActivity implements View.OnClickLi
             String result = new StringBuffer(test).reverse().toString();
             text.setText(result);
         }
-        if (view == copyName) // Sam #1
+        if (view == copyName) // Sam #12
         {
             Spinner spinner = (Spinner)findViewById(R.id.spinner);
             String raw = spinner.getSelectedItem().toString();
-            text.setText(raw);
+            text.setText(text.getText().toString() + raw);
         }
     }
 
