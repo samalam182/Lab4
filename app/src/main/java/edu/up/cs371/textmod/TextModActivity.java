@@ -134,8 +134,12 @@ public class TextModActivity extends ActionBarActivity implements View.OnClickLi
      * class that handles our spinner's selection events
      */
 
-    public void onClick(View view){
-
+    public void onClick(View view)
+    {
+        if (view == clear) //Eric #3
+        {
+            text.setText("");
+        }
     }
 
     private class MySpinnerListener implements OnItemSelectedListener {
