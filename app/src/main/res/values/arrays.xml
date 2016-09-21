@@ -9,14 +9,16 @@
         <item>@mipmap/kitten</item>
         <item>@mipmap/nuxoll</item>
         <item>@mipmap/vegdahl</item>
-        <item>@mipmap/alexander</item>
+        <item>@mipmap/sampic</item>
+        <item>@mipmap/ic_launcher</item>
     </array>
 
     <string-array name="spinner_names">
         <item>Sleeping Kitten</item>
         <item>Dr. Andrew Nuxoll</item>
         <item>Dr. Steven Vegdahl</item>
-        <item>Alexander Nowlin</item>
+        <item>Samuel DeWhitt</item>
+        <item>Eric Hoser</item>
     </string-array>
 
 </resources>
