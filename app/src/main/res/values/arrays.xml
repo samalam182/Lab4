@@ -11,6 +11,7 @@
         <item>@mipmap/vegdahl</item>
         <item>@mipmap/sampic</item>
         <item>@mipmap/ic_launcher</item>
+        <item>@mipmap/alexander</item>
     </array>
 
     <string-array name="spinner_names">
@@ -19,6 +20,7 @@
         <item>Dr. Steven Vegdahl</item>
         <item>Samuel DeWhitt</item>
         <item>Eric Hoser</item>
+        <item>Alexander Nowlin</item>
     </string-array>
 
 </resources>
