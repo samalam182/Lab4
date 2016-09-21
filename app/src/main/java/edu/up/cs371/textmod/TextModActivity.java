@@ -18,15 +18,23 @@ import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.Button;
+import android.widget.EditText;
 import java.util.ArrayList;
 
-public class TextModActivity extends ActionBarActivity {
+public class TextModActivity extends ActionBarActivity implements View.OnClickListener{
 
     // array-list that contains our images to display
     private ArrayList<Bitmap> images;
 
     // instance variables containing widgets
     private ImageView imageView; // the view that shows the image
+    private Button clear;
+    private Button upper;
+    private Button lower;
+    private Button reverse;
+    private Button copyName;
+    private EditText text;
 
     /**
      * @see android.app.Activity#onCreate(android.os.Bundle)
@@ -34,9 +42,28 @@ public class TextModActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
+
+
         // perform superclass initialization; load the layout
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_text_mod);
+
+        text = (EditText) findViewById(R.id.editText);
+
+        clear = (Button) findViewById(R.id.button);
+        clear.setOnClickListener(this);
+
+        upper = (Button) findViewById(R.id.button6);
+        upper.setOnClickListener(this);
+
+        lower = (Button) findViewById(R.id.button7);
+        lower.setOnClickListener(this);
+
+        reverse = (Button) findViewById(R.id.button4);
+        reverse.setOnClickListener(this);
+
+        copyName = (Button) findViewById(R.id.button2);
+        copyName.setOnClickListener(this);
 
         // set instance variables for our widgets
         imageView = (ImageView)findViewById(R.id.imageView);
@@ -106,6 +133,11 @@ public class TextModActivity extends ActionBarActivity {
     /**
      * class that handles our spinner's selection events
      */
+
+    public void onClick(View view){
+
+    }
+
     private class MySpinnerListener implements OnItemSelectedListener {
 
         /**
