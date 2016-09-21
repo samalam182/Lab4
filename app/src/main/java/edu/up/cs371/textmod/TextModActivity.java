@@ -157,7 +157,8 @@ public class TextModActivity extends ActionBarActivity implements View.OnClickLi
         {
             Spinner spinner = (Spinner)findViewById(R.id.spinner);
             String raw = spinner.getSelectedItem().toString();
-            text.setText(text.getText().toString() + raw);
+            String s = text.getText().toString();
+            text.setText(s + raw);
         }
     }
 
