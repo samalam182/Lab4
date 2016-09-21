@@ -49,7 +49,7 @@ public class TextModActivity extends ActionBarActivity implements View.OnClickLi
         setContentView(R.layout.activity_text_mod);
 
         text = (EditText) findViewById(R.id.editText);
-
+        //extra change
         clear = (Button) findViewById(R.id.button);
         clear.setOnClickListener(this);
 
