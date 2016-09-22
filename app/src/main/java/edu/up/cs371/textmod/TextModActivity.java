@@ -34,7 +34,7 @@ public class TextModActivity extends ActionBarActivity implements View.OnClickLi
     private Button clear;
     private Button upper;
     private Button lower;
-    private Button reverse;
+    private Button reverse; //
     private Button copyName;
     private EditText text;
 
