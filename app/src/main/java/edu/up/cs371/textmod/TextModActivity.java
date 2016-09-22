@@ -34,7 +34,7 @@ public class TextModActivity extends ActionBarActivity implements View.OnClickLi
     private Button clear;
     private Button upper;
     private Button lower;
-    private Button reverse;
+    private Button reverse; /
     private Button copyName;
     private EditText text;
 
@@ -42,7 +42,8 @@ public class TextModActivity extends ActionBarActivity implements View.OnClickLi
      * @see android.app.Activity#onCreate(android.os.Bundle)
      */
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
 
 
 
